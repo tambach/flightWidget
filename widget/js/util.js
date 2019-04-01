@@ -13,6 +13,7 @@ function trace(var_args) {
 		args.push(("\t" + fileLine[1] + ":" + fileLine[2]).padStart(40, " "));
 	}
 	console.log.apply(console, args);
+
 }
 
 /**

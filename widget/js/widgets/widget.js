@@ -53,7 +53,8 @@ class Widget extends Try {
 		trace("new widget", this.try.name);
 		
 		this.try.id = id;
-		
+		trace("new widget ID is ", this.try.id);
+
 		this.try.app = app;
 		
 		this.try.model = new model();
