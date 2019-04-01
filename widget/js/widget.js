@@ -48,7 +48,7 @@ class LeMondeView extends WidgetView {
 	draw() {
 		super.draw();
 		this.link = HH.create("a");
-		SS.style(this.link, {"fontSize": "10px", "textDecoration": "none"});
+		SS.style(this.link, {"fontSize": "90px", "textDecoration": "none"});
 		this.stage.appendChild(this.link);
 	}
 	
