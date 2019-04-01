@@ -7,16 +7,18 @@ class LeMondeWidget extends Widget {
 	setUp() {
 		super.setUp();
 		this.header = true;
-		this.footer = false;
+		this.footer = true;
 		this.sizeX = 2;
-		this.sizeY = 0.5;
+		this.sizeY = 1;
 		this.radius = 15;
 	}
 	
 	async ready() {
 		super.ready();
-		
-		this.controller.load();
+		SocketIO.initialize();
+		trace(this);
+		SocketIO.on("msg", this.mvc.controller.onMessage.bind(this));
+		this.mvc.controller.load();
 	}
 	
 }
@@ -48,8 +50,13 @@ class LeMondeView extends WidgetView {
 	draw() {
 		super.draw();
 		this.link = HH.create("a");
-		SS.style(this.link, {"fontSize": "30px", "textDecoration": "none"});
+		SS.style(this.link, {"fontSize": "10px", "textDecoration": "none"});
 		this.stage.appendChild(this.link);
+		
+		this.try.footer.innerHTML = "test socket";
+		SS.style(this.try.footer, {"userSelect": "none", "cursor": "pointer"});
+		Events.on(this.try.footer, "click", event => this.mvc.controller.socketClick());
+		this.try.stage.appendChild(this.try.footer);
 	}
 	
 	update(title, link) {
@@ -68,6 +75,15 @@ class LeMondeController extends WidgetController {
 	setUp() {
 		super.setUp();
 		
+	}
+	
+	onMessage(data) {
+		trace("received socket msg", data);
+	}
+	
+	socketClick(event) {
+		trace("test socket");
+		SocketIO.send("msg", {test: "message"});
 	}
 	
 	async load() {

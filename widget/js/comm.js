@@ -77,7 +77,7 @@ class SocketIO {
 		
 		this.jwt = jwt;
 		
-		this.io = io("/" + window.Main.appname, {
+		this.io = io("https://node.nicopr.fr/" + window.Main.appname, {
 			//transports: ["websocket"], // modern browsers only, see server side cluster
 			"query": {
 				"jwt": jwt,
@@ -111,13 +111,11 @@ class SocketIO {
 	}
 	
 	static send(type, data, callback) {
-		trace("send", data);
-		callback = callback || Util.die;
-		this.io.binary(false).emit(type, data, callback);
+		trace("send", type, data);
+		this.io.binary(false).emit(type, data, callback || die);
 	}
 	
 	static jwtsend(type, data, callback) {
-		trace("send", data);
 		this.send(type, merge(data || {}, {jwt: this.jwt}), callback);
 	}
 }

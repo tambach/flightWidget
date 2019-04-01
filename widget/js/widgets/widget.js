@@ -53,20 +53,22 @@ class Widget extends Try {
 		trace("new widget", this.try.name);
 		
 		this.try.id = id;
-
+		
 		this.try.app = app;
 		
-		this.try.model = new model();
-		this.try.view = new view();
-		this.try.controller = new controller();
+		this.try.mvc = {};
 		
-		this.try.model.mvc = {main: this, view: this.try.view, controller: this.try.controller};
-		this.try.view.mvc = {main: this, model: this.try.model, controller: this.try.controller};
-		this.try.controller.mvc = {main: this, model: this.try.model, view: this.try.view};
+		this.try.mvc.model = new model();
+		this.try.mvc.view = new view();
+		this.try.mvc.controller = new controller();
+		
+		this.try.mvc.model.mvc = {main: this, view: this.try.mvc.view, controller: this.try.mvc.controller};
+		this.try.mvc.view.mvc = {main: this, model: this.try.mvc.model, controller: this.try.mvc.controller};
+		this.try.mvc.controller.mvc = {main: this, model: this.try.mvc.model, view: this.try.mvc.view};
 		
 		this.try.setUp();
 		
-		this.try.view.try.draw();
+		this.try.mvc.view.try.draw();
 		
 		this.try.ready();
 	}

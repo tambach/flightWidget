@@ -1,11 +1,18 @@
-window.addEventListener("load", event => new Main());
+window.addEventListener("load", event => {
+	window.Main = new Main();
+	window.Main.load();
+});
 
 class Main {
 	
 	constructor() {
+		trace("load dash");
 		this._name = "dash";
+	}
+	
+	load() {
 		let widget = new LeMondeWidget(1, this);
-		document.body.appendChild(widget.view.stage);
+		document.body.appendChild(widget.mvc.view.stage);
 	}
 	
 	async get(url) {
@@ -16,4 +23,7 @@ class Main {
 		return await Comm.urlrequest("https://node.nicopr.fr/" + this._name + url, {"method": "POST", "data": data});
 	}
 	
+	get appname() {
+		return this._name;
+	}
 }
