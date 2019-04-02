@@ -73,7 +73,7 @@ class FlightView extends WidgetView {
 
 
         this.flightLink = HH.create("a");
-        SS.style(this.flightLink, {"fontsize" : "22px", "color" : "green"});
+        SS.style(this.flightLink, {"fontsize" : "22px",  "textDecoration": "none", "color" : "green"});
         this.stage.appendChild(this.flightLink);
 
 
@@ -86,11 +86,11 @@ class FlightView extends WidgetView {
     }
 
     update(title, link) {
-        trace("rain");
+
         this.link.innerHTML = title;
         HH.attr(this.link , {"href": "https://www.lemonde.fr" + link, "target": "_blank"});
 
-        this.flightLink.innerHTML = "Title of this link";
+        this.flightLink.innerHTML = "Title of this tickets' link";
         HH.attr(this.flightLink, {"href" : "https://www.airfrance.fr/", "target": "_blank"});
     }
 
@@ -119,10 +119,11 @@ class FlightController extends WidgetController {
     async load() {
 
         let result = await this.mvc.main.dom("https://lemonde.fr"); // load web page
-        let domstr = _atob(result.response.dom); // decode result
-        let parser = new DOMParser(); // init dom parser
-        let dom = parser.parseFromString(domstr, "text/html"); // inject result
+        let domstr = _atob(result.response.dom);                        // decode result
+        let parser = new DOMParser();                                   // init dom parser
+        let dom = parser.parseFromString(domstr, "text/html");    // inject result
         let article = new xph().doc(dom).ctx(dom).craft('//*[@id="en-continu"]/div/ul/li[1]/a').firstResult; // find interesting things
+        trace(article);
         this.mvc.view.update(article.textContent, article.getAttribute("href"));
     }
 
