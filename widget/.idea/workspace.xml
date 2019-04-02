@@ -87,8 +87,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/flightWidget.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="590">
-              <caret line="94" column="100" selection-start-line="94" selection-start-column="100" selection-end-line="94" selection-end-column="100" />
+            <state relative-caret-position="418">
+              <caret line="127" column="107" selection-start-line="127" selection-start-column="107" selection-end-line="127" selection-end-column="107" />
             </state>
           </provider>
         </entry>
@@ -193,12 +193,12 @@
       <option name="presentableId" value="Default" />
       <updated>1554150662538</updated>
       <workItem from="1554150665117" duration="3654000" />
-      <workItem from="1554154843909" duration="12233000" />
+      <workItem from="1554154843909" duration="12367000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15887000" />
+    <option name="totallyTimeSpent" value="16021000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="810" extended-state="0" />
@@ -315,8 +315,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/flightWidget.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="590">
-          <caret line="94" column="100" selection-start-line="94" selection-start-column="100" selection-end-line="94" selection-end-column="100" />
+        <state relative-caret-position="418">
+          <caret line="127" column="107" selection-start-line="127" selection-start-column="107" selection-end-line="127" selection-end-column="107" />
         </state>
       </provider>
     </entry>

@@ -125,7 +125,7 @@ trace("new link");
         let parser = new DOMParser();                                   // init dom parser
         let dom = parser.parseFromString(domstr, "text/html");    // inject result
        // let article = new xph().doc(dom).ctx(dom).craft('//*[@id="en-continu"]/div/ul/li[1]/a').firstResult; // find interesting things
-        let article = new xph().doc(dom).ctx(dom).craft('//*[@id="en-continu"]/div/ul/li[1]/a').allResults
+        let article = new xph().doc(dom).ctx(dom).craft('//*[@id="en-continu"]/div/ul/li[1]/a').allResults;
         trace(article);
         this.mvc.view.update(article.textContent, article.getAttribute("href"));
     }
