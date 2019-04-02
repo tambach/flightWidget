@@ -78,7 +78,7 @@ class FlightView extends WidgetView {
         HH.attr(this.flightLink, {"href" : "https://www.airfrance.fr/", "target": "_blank"})
         this.stage.appendChild(this.flightLink);
 
-        
+
 
         this.try.footer.innerHTML = "footer example";
         SS.style(this.try.footer, {"userSelect": "none", "cursor": "pointer"});
