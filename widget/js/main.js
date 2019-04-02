@@ -7,7 +7,7 @@ class Main {
 	
 	constructor() {
 		trace("load dash");
-		trace("some stupid things to test");
+		trace("PLSSssss");
 		this._name = "dash";
 	}
 	
