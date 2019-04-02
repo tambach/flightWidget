@@ -1,8 +1,7 @@
 class FlightWidget extends Widget {
 
     constructor(id, app) {
-        trace("paaaaanic");
-        trace("it's to paacniiic");
+
         super(id, FlightModel, FlightView, FlightController, app);
     }
 
@@ -54,7 +53,7 @@ class FlightView extends WidgetView {
     }
 
     draw() {
-        //super.draw();
+        super.draw();
 
         this.try.header.innerHTML = "header sample";
         this.try.stage.appendChild(this.try.header);
