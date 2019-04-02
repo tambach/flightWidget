@@ -92,6 +92,8 @@ class FlightView extends WidgetView {
 
         this.flightLink.innerHTML = "Title of this tickets' link";
         HH.attr(this.flightLink, {"href" : "https://www.airfrance.fr/", "target": "_blank"});
+        SS.style(this.flightLink, {"fontsize" : "22px",  "textDecoration": "none", "color" : "purple"});
+
     }
 
 }
