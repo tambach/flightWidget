@@ -56,7 +56,7 @@ class FlightView extends WidgetView {
         super.draw();
 
         this.try.header.innerHTML = "header sample";
-        this.try.stage.appendChild(this.try.header);
+        //this.try.stage.appendChild(this.try.header);
 
         this.link = HH.create("a");
         SS.style(this.link, {"fontSize": "14px", "textDecoration": "none", "color" : "red"});
