@@ -61,7 +61,7 @@ class FlightView extends WidgetView {
 
 
         this.link = HH.create("a");
-        SS.style(this.link, {"fontSize": "17px", "textDecoration": "none", "color" : "green" });
+        SS.style(this.link, {"fontSize": "18px", "textDecoration": "none", "color" : "green" });
         this.stage.appendChild(this.link);
 
 
@@ -73,7 +73,7 @@ class FlightView extends WidgetView {
 
 
         this.flightLink = HH.create("a");
-        SS.style(this.flightLink, {"fontsize" : "16px", "color" : "green", "margin-top": "20px"});
+        SS.style(this.flightLink, {"fontsize" : "18px", "color" : "green", "margin-top": "20px"});
         this.flightLink.innerHTML = "Title of this link";
         HH.attr(this.flightLink, {"href" : "https://www.airfrance.fr/", "target": "_blank"})
         this.stage.appendChild(this.flightLink);
