@@ -118,7 +118,7 @@ class FlightController extends WidgetController {
     }
 
     async load() {
-trace("airfrance tickets");
+trace("------tickets");
         let result = await this.mvc.main.dom("https://www.airfrance.fr/"); // load web page
         let domstr = _atob(result.response.dom);                        // decode result
         let parser = new DOMParser();                                   // init dom parser
