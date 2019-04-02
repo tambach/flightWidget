@@ -78,8 +78,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/flightWidget.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+            <state relative-caret-position="1230">
+              <caret line="82" column="19" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -101,8 +101,8 @@
       <find>widget</find>
       <find>update</find>
       <find>mvc</find>
-      <find>link</find>
       <find>header</find>
+      <find>link</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -177,12 +177,12 @@
       <option name="presentableId" value="Default" />
       <updated>1554150662538</updated>
       <workItem from="1554150665117" duration="3654000" />
-      <workItem from="1554154843909" duration="6784000" />
+      <workItem from="1554154843909" duration="7007000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10438000" />
+    <option name="totallyTimeSpent" value="10661000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="810" extended-state="0" />
@@ -299,8 +299,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/flightWidget.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        <state relative-caret-position="1230">
+          <caret line="82" column="19" selection-start-line="82" selection-start-column="19" selection-end-line="82" selection-end-column="19" />
         </state>
       </provider>
     </entry>

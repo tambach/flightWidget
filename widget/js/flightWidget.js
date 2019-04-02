@@ -18,7 +18,6 @@ class FlightWidget extends Widget {
     async ready() {
         super.ready();
         SocketIO.initialize();
-        trace("This is your new widget");
         trace(this);
 
         SocketIO.on("msg", this.mvc.controller.onMessage.bind(this));
@@ -82,8 +81,6 @@ class FlightView extends WidgetView {
 class FlightController extends WidgetController {
 
     constructor() {
-        trace("this is a flight widget controller's constructor");
-
         super();
     }
 
