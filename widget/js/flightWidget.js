@@ -12,7 +12,7 @@ class FlightWidget extends Widget {
         this.sizeY = 4;
         this.radius = 20;
 
-        this.defaultSize = 50;
+        this.defaultSize = 100;
     }
 
     async ready() {
