@@ -7,14 +7,13 @@ class Main {
 	
 	constructor() {
 		trace("load dash");
-		trace("PLSSssss");
 		this._name = "dash";
 	}
 	
 	load() {
 		//let widget = new LeMondeWidget(1, this);
 		//document.body.appendChild(widget.mvc.view.stage);
-trace("load in the main.js");
+
 		let flightWidget = new FlightWidget(2, this);
 		document.body.appendChild(flightWidget.mvc.view.stage);
 

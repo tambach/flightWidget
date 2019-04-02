@@ -17,8 +17,6 @@ class LeMondeWidget extends Widget {
 		super.ready();
 		SocketIO.initialize();
 		trace(this);
-		trace("here we can trace anything");
-		trace(this.footer);
 		SocketIO.on("msg", this.mvc.controller.onMessage.bind(this));
 		this.mvc.controller.load();
 	}

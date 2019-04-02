@@ -12,7 +12,7 @@ class FlightWidget extends Widget {
         this.sizeY = 2;
         this.radius = 20;
 
-        this.defaultSize = 100;
+        this.defaultSize = 50;
     }
 
     async ready() {
@@ -20,10 +20,7 @@ class FlightWidget extends Widget {
         SocketIO.initialize();
         trace("This is your new widget");
         trace(this);
-        trace("this is your header");
-        trace(this.footer);
-        trace("this is your footer");
-        trace(this.footer);
+
         SocketIO.on("msg", this.mvc.controller.onMessage.bind(this));
         this.mvc.controller.load();
     }
@@ -46,13 +43,11 @@ class FlightModel extends WidgetModel {
 class FlightView extends WidgetView {
 
     constructor() {
-        trace("this is a flight widget view's constructor");
 
         super();
     }
 
     setUp() {
-        trace("this is a flight widget view's setup method");
 
         super.setUp();
 
@@ -60,9 +55,13 @@ class FlightView extends WidgetView {
 
     draw() {
         super.draw();
-        this.link = HH.create("div");
-        SS.style(this.link, {"fontSize": "16px", "textDecoration": "none"});
+        this.link = HH.create("a");
+        SS.style(this.link, {"fontSize": "12px", "textDecoration": "none", "color" : "yellow"});
         this.stage.appendChild(this.link);
+
+        this.try.header.innerHTML = "header sample";
+        this.try.stage.appendChild(this.try.header);
+
 
         this.try.footer.innerHTML = "footer for flight widget";
         SS.style(this.try.footer, {"userSelect": "none", "cursor": "pointer"});
