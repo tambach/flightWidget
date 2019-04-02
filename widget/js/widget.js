@@ -9,10 +9,10 @@ class LeMondeWidget extends Widget {
 		this.header = true;
 		this.footer = true;
 		//this.sizeX = 2;
-		this.sizeX = 8;
-		this.sizeY = 8;
+		this.sizeX = 3;
+		this.sizeY = 2;
 		//this.sizeY = 1;
-		this.radius = 45;
+		this.radius = 20;
 	}
 	
 	async ready() {
