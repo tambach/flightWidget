@@ -42,7 +42,7 @@ class FlightModel extends WidgetModel {
 class FlightView extends WidgetView {
 
     constructor() {
-
+trace("pls echo smth");
         super();
     }
 
