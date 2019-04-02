@@ -9,7 +9,7 @@ class FlightWidget extends Widget {
         super.setUp();
         this.header = true;
         this.footer = true;
-        this.sizeX = 4;
+        this.sizeX = 6;
         this.sizeY = 4;
         this.radius = 20;
 
