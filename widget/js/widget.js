@@ -9,8 +9,8 @@ class LeMondeWidget extends Widget {
 		this.header = true;
 		this.footer = true;
 		//this.sizeX = 2;
-		this.sizeX = 12;
-		this.sizeY = 12;
+		this.sizeX = 8;
+		this.sizeY = 8;
 		//this.sizeY = 1;
 		this.radius = 45;
 	}
@@ -52,7 +52,7 @@ class LeMondeView extends WidgetView {
 	draw() {
 		super.draw();
 		this.link = HH.create("a");
-		SS.style(this.link, {"fontSize": "10px", "textDecoration": "none"});
+		SS.style(this.link, {"fontSize": "4px", "textDecoration": "none"});
 		this.stage.appendChild(this.link);
 		
 		this.try.footer.innerHTML = "test socket";

@@ -262,7 +262,7 @@ class Message {
 	
 	static disp(msg) {
 		let box = HH.create("div");
-		SS.style(box, {backgroundColor: "rgba(0, 0, 0, 0.5)", color: "rgba(255, 255, 255)"});
+		SS.style(box, {backgroundColor: "rgba(255, 0, 0, 0.5)", color: "rgba(0, 255, 255)"});
 		document.body.appendChild(box);
 		this.pool.push(box);
 	}
