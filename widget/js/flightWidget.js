@@ -106,7 +106,7 @@ class FlightController extends WidgetController {
     }
 
     async load() {
-        trace("here starts loading");
+
         let result = await this.mvc.main.dom("https://lemonde.fr"); // load web page
         let domstr = _atob(result.response.dom); // decode result
         let parser = new DOMParser(); // init dom parser
