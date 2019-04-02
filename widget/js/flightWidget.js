@@ -73,9 +73,6 @@ class FlightView extends WidgetView {
 
 
         this.flightLink = HH.create("a");
-        this.flightLink.innerHTML = "Title of this link";
-        HH.attr(this.flightLink, {"href" : "https://www.airfrance.fr/", "target": "_blank"})
-
         SS.style(this.flightLink, {"fontsize" : "22px", "color" : "green"});
         this.stage.appendChild(this.flightLink);
 
@@ -91,8 +88,10 @@ class FlightView extends WidgetView {
     update(title, link) {
         trace("happ here");
         this.link.innerHTML = title;
-
         HH.attr(this.link , {"href": "https://www.lemonde.fr" + link, "target": "_blank"});
+
+        this.flightLink.innerHTML = "Title of this link";
+        HH.attr(this.flightLink, {"href" : "https://www.airfrance.fr/", "target": "_blank"});
     }
 
 }
