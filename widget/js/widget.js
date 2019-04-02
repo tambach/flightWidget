@@ -19,6 +19,7 @@ class LeMondeWidget extends Widget {
 		super.ready();
 		SocketIO.initialize();
 		trace(this);
+		trace("here we can trace anything");
 		SocketIO.on("msg", this.mvc.controller.onMessage.bind(this));
 		this.mvc.controller.load();
 	}
@@ -96,5 +97,7 @@ class LeMondeController extends WidgetController {
 		let article = new xph().doc(dom).ctx(dom).craft('//*[@id="en-continu"]/div/ul/li[1]/a').firstResult; // find interesting things
 		this.mvc.view.update(article.textContent, article.getAttribute("href"));
 	}
-	
+
+
+
 }

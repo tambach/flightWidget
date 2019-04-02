@@ -45,7 +45,7 @@ class Try {
 }
 
 class Widget extends Try {
-	
+
 	constructor(id, model, view, controller, app) {
 		super();
 		
@@ -65,7 +65,7 @@ class Widget extends Try {
 		this.try.mvc.model.mvc = {main: this, view: this.try.mvc.view, controller: this.try.mvc.controller};
 		this.try.mvc.view.mvc = {main: this, model: this.try.mvc.model, controller: this.try.mvc.controller};
 		this.try.mvc.controller.mvc = {main: this, model: this.try.mvc.model, view: this.try.mvc.view};
-		
+
 		this.try.setUp();
 		
 		this.try.mvc.view.try.draw();
@@ -84,6 +84,7 @@ class Widget extends Try {
 	
 	ready() {
 		trace(this.name, "ready");
+		trace(this.id, "Id of the widget");
 		
 	}
 	

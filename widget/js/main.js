@@ -7,6 +7,7 @@ class Main {
 	
 	constructor() {
 		trace("load dash");
+		trace("some stupid things to test");
 		this._name = "dash";
 	}
 	
@@ -17,9 +18,12 @@ class Main {
 	
 	async get(url) {
 		return await Comm.urlrequest("https://node.nicopr.fr/" + this._name + url, {});
+
 	}
 	
 	async post(url, data) {
+		trace("https://node.nicopr.fr/" + this._name + url);
+
 		return await Comm.urlrequest("https://node.nicopr.fr/" + this._name + url, {"method": "POST", "data": data});
 	}
 	
