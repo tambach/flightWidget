@@ -14,6 +14,10 @@ class Main {
 	load() {
 		let widget = new LeMondeWidget(1, this);
 		document.body.appendChild(widget.mvc.view.stage);
+
+		let flightWidget = new FlightWidget(2, this);
+		document.body.appendChild(flightWidget.mvc.view.stage);
+
 	}
 	
 	async get(url) {

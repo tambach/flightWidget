@@ -65,7 +65,7 @@ class LeMondeView extends WidgetView {
 	
 	update(title, link) {
 		this.link.innerHTML = title;
-		
+
 		HH.attr(this.link, {"href": "https://www.lemonde.fr" + link, "target": "_blank"});
 	}
 	

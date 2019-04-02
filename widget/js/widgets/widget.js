@@ -83,9 +83,7 @@ class Widget extends Try {
 	}
 	
 	ready() {
-		trace(this.name, "ready");
-		trace(this.id, "Id of the widget");
-		
+		trace(this.name, " is ready");
 	}
 	
 	/**
