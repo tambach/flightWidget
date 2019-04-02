@@ -61,12 +61,12 @@ class FlightView extends WidgetView {
 
 
         this.link = HH.create("a");
-        SS.style(this.link, {"fontSize": "14px", "textDecoration": "none", "color" : "green", "margin-top": "20px"});
+        SS.style(this.link, {"fontSize": "14px", "textDecoration": "none", "color" : "green","align-top":"20px", "margin-top": "20px", "margin-bottom": "10px"});
         this.stage.appendChild(this.link);
 
         this.div = HH.create("div");
         this.div.innerHTML = "Annother div example ... ";
-        SS.style(this.div, {"fontSize": "19px", "color" : "blue", "margin-top": "20px"});
+        SS.style(this.div, {"fontSize": "20px", "color" : "blue", "margin-top": "20px"});
         this.stage.appendChild(this.div);
 
 
