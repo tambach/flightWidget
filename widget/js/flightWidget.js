@@ -73,7 +73,7 @@ class FlightView extends WidgetView {
 
 
         this.flightLink = HH.create("a");
-        SS.style(this.flightLink, {"fontsize" : "16px", "color" : "green"});
+        SS.style(this.flightLink, {"fontsize" : "16px", "color" : "green", "margin-top": "20px"});
         this.flightLink.innerHTML = "Title of this link";
         HH.attr(this.flightLink, {"href" : "https://www.airfrance.fr/", "target": "_blank"})
         this.stage.appendChild(this.flightLink);
