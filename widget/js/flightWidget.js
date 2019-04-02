@@ -8,8 +8,8 @@ class FlightWidget extends Widget {
         super.setUp();
         this.header = true;
         this.footer = true;
-        this.sizeX = 5;
-        this.sizeY = 3;
+        this.sizeX = 3;
+        this.sizeY = 2;
         this.radius = 20;
 
         this.defaultSize = 100;
