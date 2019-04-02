@@ -86,7 +86,7 @@ class FlightView extends WidgetView {
     }
 
     update(title, link) {
-        trace("happ here");
+        trace("rain");
         this.link.innerHTML = title;
         HH.attr(this.link , {"href": "https://www.lemonde.fr" + link, "target": "_blank"});
 
