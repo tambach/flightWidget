@@ -29,7 +29,6 @@ class FlightWidget extends Widget {
 class FlightModel extends WidgetModel {
 
     constructor() {
-        trace("this is a flight widget model's constructor");
         super();
     }
 
