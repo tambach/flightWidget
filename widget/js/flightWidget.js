@@ -1,7 +1,7 @@
 class FlightWidget extends Widget {
 
     constructor(id, app) {
-        trace("don't panic");
+        trace("paaaaanic");
         super(id, FlightModel, FlightView, FlightController, app);
     }
 
