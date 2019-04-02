@@ -53,7 +53,7 @@ class FlightView extends WidgetView {
     }
 
     draw() {
-        super.draw();
+        //super.draw();
 
         this.try.header.innerHTML = "header sample";
         this.try.stage.appendChild(this.try.header);
@@ -65,7 +65,7 @@ class FlightView extends WidgetView {
 
 
 
-        this.try.footer.innerHTML = "footer for flight widget";
+        this.try.footer.innerHTML = "footer example";
         SS.style(this.try.footer, {"userSelect": "none", "cursor": "pointer"});
         Events.on(this.try.footer, "click", event => this.mvc.controller.socketClick());
         this.try.stage.appendChild(this.try.footer);
