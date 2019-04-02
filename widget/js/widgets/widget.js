@@ -185,7 +185,7 @@ class WidgetView extends Try {
 		let h = this.try.mvc.main.defaultSize * this.try.mvc.main.sizeY;
 		
 		this.try.stage = HH.create("div");
-		SS.style(this.try.stage, {"position": "relative", "width": w + "px", "height": h + "px", "overflow": "hidden", "backgroundColor": "rgba(200, 255, 200, 10)", "borderRadius": this.try.mvc.main.radius + "px"});
+		SS.style(this.try.stage, {"position": "relative", "width": w + "px", "textAlign": "center", "align-right": "50px", "height": h + "px", "overflow": "hidden", "backgroundColor": "rgba(200, 255, 200, 10)", "borderRadius": this.try.mvc.main.radius + "px"});
 		
 		if(this.try.mvc.main.header) {
 			this.try.header = HH.create("div");
@@ -196,7 +196,7 @@ class WidgetView extends Try {
 		
 		if(this.try.mvc.main.footer) {
 			this.try.footer = HH.create("div");
-			SS.style(this.try.footer, {"position": "absolute", "bottom": "0px", "z-index": 100, "width": "100%", "height": "25px", "lineHeight": "25px", "textAlign": "center", "border-bottom-left-radius": this.try.mvc.main.radius + "px", "border-bottom-right-radius": this.try.mvc.main.radius + "px","backgroundColor": "#0072ff"});
+			SS.style(this.try.footer, {"position": "absolute", "bottom": "0px", "z-index": 100, "width": "100%", "height": "30px", "lineHeight": "30px", "textAlign": "center", "border-bottom-left-radius": this.try.mvc.main.radius + "px", "border-bottom-right-radius": this.try.mvc.main.radius + "px","backgroundColor": "#0072ff"});
 			this.try.footer.innerHTML = "footer";
 			this.try.stage.appendChild(this.try.footer);
 		}
