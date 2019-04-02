@@ -1,7 +1,7 @@
 class FlightWidget extends Widget {
 
     constructor(id, app) {
-
+trace("WTH");
         super(id, FlightModel, FlightView, FlightController, app);
     }
 
