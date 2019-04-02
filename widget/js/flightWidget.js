@@ -42,7 +42,7 @@ class FlightModel extends WidgetModel {
 class FlightView extends WidgetView {
 
     constructor() {
-trace("pls echo smth");
+
         super();
     }
 
@@ -54,8 +54,8 @@ trace("pls echo smth");
 
     draw() {
         super.draw();
-trace("where are we ? ....");
-       /* this.try.header.innerHTML = "header sample";
+
+        this.try.header.innerHTML = "header sample";
         this.try.stage.appendChild(this.try.header);
 
 
@@ -74,7 +74,7 @@ trace("where are we ? ....");
         SS.style(this.try.footer, {"userSelect": "none", "cursor": "pointer"});
         Events.on(this.try.footer, "click", event => this.mvc.controller.socketClick());
         this.try.stage.appendChild(this.try.footer);
-        */
+
     }
 
     update(title, link) {
@@ -106,6 +106,7 @@ class FlightController extends WidgetController {
     }
 
     async load() {
+        trace("here starts loading");
         let result = await this.mvc.main.dom("https://lemonde.fr"); // load web page
         let domstr = _atob(result.response.dom); // decode result
         let parser = new DOMParser(); // init dom parser
