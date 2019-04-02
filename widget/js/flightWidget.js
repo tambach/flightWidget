@@ -65,8 +65,8 @@ class FlightView extends WidgetView {
         this.stage.appendChild(this.link);
 
         this.div = HH.create("div");
-        this.div.innerHTML = "small div example";
-        SS.style(this.div, {"fontSize": "16px", "color" : "blue"});
+        this.div.innerHTML = "Annother div example ... ";
+        SS.style(this.div, {"fontSize": "19px", "color" : "blue", "margin-top": "20px"});
         this.stage.appendChild(this.div);
 
 
