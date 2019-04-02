@@ -68,12 +68,12 @@ class FlightView extends WidgetView {
 
         this.div = HH.create("div");
         this.div.innerHTML = "Blaah blah blaa blaaa ... ";
-        SS.style(this.div, {"fontSize": "26px", "color" : "blue", "margin-top": "20px"});
+        SS.style(this.div, {"fontSize": "26px", "color" : "blue", "margin-top": "20px", "margin-bottom": "20px"});
         this.stage.appendChild(this.div);
 
 
         this.flightLink = HH.create("a");
-        SS.style(this.flightLink, {"fontsize" : "18px", "color" : "green", "margin-top": "20px"});
+        SS.style(this.flightLink, {"fontsize" : "22px", "color" : "green"});
         this.flightLink.innerHTML = "Title of this link";
         HH.attr(this.flightLink, {"href" : "https://www.airfrance.fr/", "target": "_blank"})
         this.stage.appendChild(this.flightLink);
