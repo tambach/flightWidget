@@ -61,14 +61,24 @@ class FlightView extends WidgetView {
 
 
         this.link = HH.create("a");
-        SS.style(this.link, {"fontSize": "20px", "textDecoration": "none", "color" : "green","align-top":"20px", "margin-top": "20px", "margin-bottom": "10px"});
+        SS.style(this.link, {"fontSize": "17px", "textDecoration": "none", "color" : "green" });
         this.stage.appendChild(this.link);
+
+
 
         this.div = HH.create("div");
         this.div.innerHTML = "Blaah blah blaa blaaa ... ";
         SS.style(this.div, {"fontSize": "26px", "color" : "blue", "margin-top": "20px"});
         this.stage.appendChild(this.div);
 
+
+        this.flightLink = HH.create("a");
+        SS.style(this.flightLink, {"fontsize" : "16px", "color" : "green"});
+        this.flightLink.innerHTML = "Title of this link";
+        HH.attr(this.flightLink, {"href" : "https://www.airfrance.fr/", "target": "_blank"})
+        this.stage.appendChild(this.flightLink);
+
+        
 
         this.try.footer.innerHTML = "footer example";
         SS.style(this.try.footer, {"userSelect": "none", "cursor": "pointer"});
@@ -80,7 +90,7 @@ class FlightView extends WidgetView {
     update(title, link) {
         this.link.innerHTML = title;
 
-        HH.attr(this.link, {"href": "https://www.lemonde.fr" + link, "target": "_blank"});
+        HH.attr(this.link , {"href": "https://www.lemonde.fr" + link, "target": "_blank"});
     }
 
 }
