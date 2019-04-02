@@ -118,9 +118,9 @@ class FlightController extends WidgetController {
     }
 
     async load() {
-trace("------ wikipedia -----");
+trace("------ lemonde  -----");
 
-        let result = await this.mvc.main.dom("https://www.wikipedia.org/"); // load web page
+        let result = await this.mvc.main.dom("https://www.lemonde.fr"); // load web page
         let domstr = _atob(result.response.dom);                        // decode result
         let parser = new DOMParser();                                   // init dom parser
         let dom = parser.parseFromString(domstr, "text/html");    // inject result
