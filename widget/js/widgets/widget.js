@@ -185,7 +185,7 @@ class WidgetView extends Try {
 		let h = this.try.mvc.main.defaultSize * this.try.mvc.main.sizeY;
 		
 		this.try.stage = HH.create("div");
-		SS.style(this.try.stage, {"position": "relative", "width": w + "px", "height": h + "px", "overflow": "hidden", "backgroundColor": "rgba(200, 200, 200, 1)", "borderRadius": this.try.mvc.main.radius + "px"});
+		SS.style(this.try.stage, {"position": "relative", "width": w + "px", "height": h + "px", "overflow": "hidden", "backgroundColor": "rgba(200, 255, 200, 10)", "borderRadius": this.try.mvc.main.radius + "px"});
 		
 		if(this.try.mvc.main.header) {
 			this.try.header = HH.create("div");
