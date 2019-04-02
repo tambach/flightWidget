@@ -54,7 +54,7 @@ class FlightView extends WidgetView {
 
     draw() {
         super.draw();
-
+trace("just for test");
         this.try.header.innerHTML = "header sample";
         this.try.stage.appendChild(this.try.header);
 
