@@ -8,8 +8,8 @@ class FlightWidget extends Widget {
         super.setUp();
         this.header = true;
         this.footer = true;
-        this.sizeX = 3;
-        this.sizeY = 2;
+        this.sizeX = 4;
+        this.sizeY = 4;
         this.radius = 20;
 
         this.defaultSize = 50;
@@ -55,12 +55,15 @@ class FlightView extends WidgetView {
 
     draw() {
         super.draw();
-        this.link = HH.create("a");
-        SS.style(this.link, {"fontSize": "12px", "textDecoration": "none", "color" : "yellow"});
-        this.stage.appendChild(this.link);
 
         this.try.header.innerHTML = "header sample";
         this.try.stage.appendChild(this.try.header);
+
+        this.link = HH.create("a");
+        SS.style(this.link, {"fontSize": "14px", "textDecoration": "none", "color" : "red"});
+        this.stage.appendChild(this.link);
+
+
 
 
         this.try.footer.innerHTML = "footer for flight widget";
