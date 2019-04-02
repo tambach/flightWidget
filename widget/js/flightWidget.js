@@ -54,14 +54,14 @@ class FlightView extends WidgetView {
 
     draw() {
         super.draw();
-trace("just for test");
+
         this.try.header.innerHTML = "header sample";
         this.try.stage.appendChild(this.try.header);
 
 
 
         this.link = HH.create("a");
-        SS.style(this.link, {"fontSize": "14px", "textDecoration": "none", "color" : "red"});
+        SS.style(this.link, {"fontSize": "14px", "textDecoration": "none", "color" : "green", "margin-top": "20px"});
         this.stage.appendChild(this.link);
 
         this.div = HH.create("div");
