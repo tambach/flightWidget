@@ -6,11 +6,11 @@ class LeMondeWidget extends Widget {
 	
 	setUp() {
 		super.setUp();
-		this.header = true;
+		//this.header = true;
 		this.footer = true;
 		//this.sizeX = 2;
 		this.sizeX = 3;
-		this.sizeY = 2;
+		this.sizeY = 4;
 		//this.sizeY = 1;
 		this.radius = 20;
 	}
@@ -20,6 +20,7 @@ class LeMondeWidget extends Widget {
 		SocketIO.initialize();
 		trace(this);
 		trace("here we can trace anything");
+		trace(this.footer);
 		SocketIO.on("msg", this.mvc.controller.onMessage.bind(this));
 		this.mvc.controller.load();
 	}
@@ -64,6 +65,7 @@ class LeMondeView extends WidgetView {
 	
 	update(title, link) {
 		this.link.innerHTML = title;
+		
 		HH.attr(this.link, {"href": "https://www.lemonde.fr" + link, "target": "_blank"});
 	}
 	
