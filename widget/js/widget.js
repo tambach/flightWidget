@@ -52,7 +52,7 @@ class LeMondeView extends WidgetView {
 	draw() {
 		super.draw();
 		this.link = HH.create("a");
-		SS.style(this.link, {"fontSize": "4px", "textDecoration": "none"});
+		SS.style(this.link, {"fontSize": "12px", "textDecoration": "none"});
 		this.stage.appendChild(this.link);
 		
 		this.try.footer.innerHTML = "test socket";
