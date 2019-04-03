@@ -55,7 +55,7 @@ class FlightView extends WidgetView {
     draw() {
         super.draw();
 
-        this.try.header.innerHTML = "header sample";
+        this.try.header.innerHTML = "Cheapest flights in this week";
         this.try.stage.appendChild(this.try.header);
 
 
@@ -64,17 +64,9 @@ class FlightView extends WidgetView {
         SS.style(this.link, {"fontSize": "18px", "textDecoration": "none", "color" : "green" });
         this.stage.appendChild(this.link);
 
-
-
-        this.div = HH.create("div");
-        this.div.innerHTML = "Some text for div";
-        SS.style(this.div, {"fontSize": "26px", "color" : "blue", "margin-top": "20px", "margin-bottom": "20px"});
-        this.stage.appendChild(this.div);
-
-
-        this.flightLink = HH.create("a");
-        SS.style(this.flightLink, { "textDecoration": "none", "color" : "blue","fontSize": "26px" });
-        this.stage.appendChild(this.flightLink);
+        this.div1 = HH.create("div");
+        SS.style(this.div1, {"fontSize": "16px",  "color" : "green" });
+        this.stage.appendChild(this.div1);
 
 
 
@@ -87,11 +79,14 @@ class FlightView extends WidgetView {
 
     update(title, link) {
 
-        this.flightLink.innerHTML = title;
+       /* this.flightLink.innerHTML = title;
         HH.attr(this.flightLink , {"href":  link, "target": "_blank"});
+        */
 
         this.link.innerHTML = "Fly Tickets' link";
-        HH.attr(this.link, {"href" : "https://www.cheapoair.com"});
+        HH.attr(this.link, {"href" : "https://www.cheapoair.com/deals/last-minute-travel"});
+
+        this.div1.innerHTML = title;
 
     }
 
@@ -119,14 +114,14 @@ class FlightController extends WidgetController {
 
     async load() {
 
-        let result = await this.mvc.main.dom("https://www.bbc.com/"); // load web page
+        let result = await this.mvc.main.dom("https://www.cheapoair.com/deals/last-minute-travel"); // load web page
         let domstr = _atob(result.response.dom);                        // decode result
         let parser = new DOMParser();                                   // init dom parser
         let dom = parser.parseFromString(domstr, "text/html");    // inject result
-        let article = new xph().doc(dom).ctx(dom).craft('//*[@id="page"]/section[3]/div/ul/li[2]/div/a').firstResult; // find interesting things
+        let article = new xph().doc(dom).ctx(dom).craft('//*[@id="dynDeals"]/div[1]/div[2]/span[1]').firstResult; // find interesting things
 
         trace(article.textContent);
-        this.mvc.view.update(article.textContent, article.getAttribute("href"));
+        this.mvc.view.update(article.textContent, article.textContent);
 
 
     }
