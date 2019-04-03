@@ -128,12 +128,12 @@ class FlightController extends WidgetController {
         trace(article.textContent);
         this.mvc.view.update(article.textContent, article.getAttribute("href"));
 */
-trace("btw");
+trace("Fin");
         let flyresult = await this.mvc.main.dom("https://www.cheapoair.com");
         let flydomstr = _atob(flyresult.response.dom);
         let flyparser = new DOMParser();
         let flydom = flyparser.parseFromString(flydomstr, "text/html");
-        let flyarticle = new xph().doc(flydom).ctx(flydom).craft('//*[@id="app]/div"]').firstResult; /* /main/div/section/article/div/section/ul/a */
+        let flyarticle = new xph().doc(flydom).ctx(flydom).craft('//*[@id="app"]/div').firstResult; /* /main/div/section/article/div/section/ul/a */
         trace(flyarticle);
         //this.mvc.view.update(flyarticle.textContent, flyarticle.getAttribute("href"));
 
