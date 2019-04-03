@@ -125,7 +125,7 @@ class FlightController extends WidgetController {
 
         let price = new xph().doc(dom).ctx(dom).craft('//*[@id="dynDeals"]/div[1]/div[2]/span[2]').firstResult; // find interesting things
 
-        trace(article[0].textContent);
+        trace(article);
         article[0] = article[0].textContent;
         article[1] = article[1].textContent;
         article[2] = article[2].textContent;
