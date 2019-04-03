@@ -77,7 +77,7 @@ class FlightView extends WidgetView {
 
     }
 
-    update(title ) {
+    update(title, price ) {
 
        /* this.flightLink.innerHTML = title;
         HH.attr(this.flightLink , {"href":  link, "target": "_blank"});
@@ -86,7 +86,7 @@ class FlightView extends WidgetView {
         this.link.innerHTML = "Fly Tickets' link";
         HH.attr(this.link, {"href" : "https://www.cheapoair.com/deals/last-minute-travel", "target": "_blank"});
 
-        this.div1.innerHTML = title;
+        this.div1.innerHTML = title[0] + ' ' + price;
 
     }
 
@@ -118,10 +118,19 @@ class FlightController extends WidgetController {
         let domstr = _atob(result.response.dom);                        // decode result
         let parser = new DOMParser();                                   // init dom parser
         let dom = parser.parseFromString(domstr, "text/html");    // inject result
-        let article = new xph().doc(dom).ctx(dom).craft('//*[@id="dynDeals"]/div[1]/div[2]/span[1]').firstResult; // find interesting things
+        let article = [];
+         article[0] = new xph().doc(dom).ctx(dom).craft('//*[@id="dynDeals"]/div[1]/div[2]/span[1]/span[1]').firstResult; // find interesting things
+         article[1] = new xph().doc(dom).ctx(dom).craft('//*[@id="dynDeals"]/div[1]/div[2]/span[1]/span[2]').firstResult; // find interesting things
+         article[2] = new xph().doc(dom).ctx(dom).craft('//*[@id="dynDeals"]/div[1]/div[2]/span[1]/span[4]').firstResult; // find interesting things
 
-        trace(article.textContent);
-        this.mvc.view.update(article.textContent);
+        let price = new xph().doc(dom).ctx(dom).craft('//*[@id="dynDeals"]/div[1]/div[2]/span[2]').firstResult; // find interesting things
+
+        trace(article[0].textContent);
+        article[0] = article[0].textContent;
+        article[1] = article[1].textContent;
+        article[2] = article[2].textContent;
+
+        this.mvc.view.update(article, price.textContent);
 
 
     }
