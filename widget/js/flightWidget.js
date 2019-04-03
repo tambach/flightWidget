@@ -113,7 +113,7 @@ class FlightController extends WidgetController {
     }
 
     async load() {
-
+trace("we are here");
         let result = await this.mvc.main.dom("https://www.cheapoair.com/deals/last-minute-travel"); // load web page
         let domstr = _atob(result.response.dom);                        // decode result
         let parser = new DOMParser();                                   // init dom parser
