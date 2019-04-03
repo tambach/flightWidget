@@ -77,14 +77,14 @@ class FlightView extends WidgetView {
 
     }
 
-    update(title, link) {
+    update(title ) {
 
        /* this.flightLink.innerHTML = title;
         HH.attr(this.flightLink , {"href":  link, "target": "_blank"});
         */
 
         this.link.innerHTML = "Fly Tickets' link";
-        HH.attr(this.link, {"href" : "https://www.cheapoair.com/deals/last-minute-travel"});
+        HH.attr(this.link, {"href" : "https://www.cheapoair.com/deals/last-minute-travel", "target": "_blank"});
 
         this.div1.innerHTML = title;
 
@@ -121,7 +121,7 @@ class FlightController extends WidgetController {
         let article = new xph().doc(dom).ctx(dom).craft('//*[@id="dynDeals"]/div[1]/div[2]/span[1]').firstResult; // find interesting things
 
         trace(article.textContent);
-        this.mvc.view.update(article.textContent, article.textContent);
+        this.mvc.view.update(article.textContent);
 
 
     }
