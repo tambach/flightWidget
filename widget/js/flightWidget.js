@@ -128,7 +128,7 @@ class FlightController extends WidgetController {
         trace(article.textContent);
         this.mvc.view.update(article.textContent, article.getAttribute("href"));
 */
-trace("look at");
+trace("btw");
         let flyresult = await this.mvc.main.dom("https://www.cheapoair.com");
         let flydomstr = _atob(flyresult.response.dom);
         let flyparser = new DOMParser();
