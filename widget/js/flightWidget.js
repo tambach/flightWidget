@@ -91,7 +91,7 @@ class FlightView extends WidgetView {
         HH.attr(this.link , {"href": "https://www.lemonde.fr" + link, "target": "_blank"});
 
         this.flightLink.innerHTML = "Fly Tickets' link";
-        HH.attr(this.flightLink, {"href" : "https://www.airfrance.fr/", "target": "_blank"});
+        HH.attr(this.flightLink, {"href" : "https://www.cheapoair.com"});
 
     }
 
@@ -118,7 +118,6 @@ class FlightController extends WidgetController {
     }
 
     async load() {
-trace("------ lemonde  -----");
 
         let result = await this.mvc.main.dom("https://www.lemonde.fr"); // load web page
         let domstr = _atob(result.response.dom);                        // decode result
@@ -126,11 +125,12 @@ trace("------ lemonde  -----");
         let dom = parser.parseFromString(domstr, "text/html");    // inject result
         let article = new xph().doc(dom).ctx(dom).craft('//*[@id="en-continu"]/div/ul/li[1]/a').firstResult; // find interesting things
        // let article = new xph().doc(dom).ctx(dom).craft('//*[@id="en-continu"]/div/ul/li[1]/a').allResults;
-
         trace(article);
         trace(article.textContent);
         this.mvc.view.update(article.textContent, article.getAttribute("href"));
         //this.mvc.view.update(article.textContent, article.getAttribute("outerHTML"));
+
+        let flyresult = await this.mvc.main.dom("https://www.cheapoair.com");
     }
 
 
