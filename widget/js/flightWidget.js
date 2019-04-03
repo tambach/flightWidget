@@ -92,7 +92,7 @@ class FlightView extends WidgetView {
 
         this.link.innerHTML = "Fly Tickets' link";
         HH.attr(this.link, {"href" : "https://www.cheapoair.com"});
-
+        
     }
 
 }
