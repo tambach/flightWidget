@@ -69,13 +69,13 @@ class FlightView extends WidgetView {
         this.div = HH.create("div");
         this.div.innerHTML = "Blaah blah blaa blaaa ... ";
         SS.style(this.div, {"fontSize": "26px", "color" : "blue", "margin-top": "20px", "margin-bottom": "20px"});
-        this.stage.appendChild(this.div);
 
 
         this.flightLink = HH.create("a");
         SS.style(this.flightLink, { "textDecoration": "none", "color" : "blue","fontSize": "26px" });
         this.stage.appendChild(this.flightLink);
 
+        this.stage.appendChild(this.div);
 
 
         this.try.footer.innerHTML = "footer example";
@@ -86,7 +86,7 @@ class FlightView extends WidgetView {
     }
 
     update(title, link) {
-
+trace("hgjhgj");
         this.flightLink.innerHTML = title;
         HH.attr(this.flightLink , {"href":  link, "target": "_blank"});
 
