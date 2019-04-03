@@ -73,7 +73,7 @@ class FlightView extends WidgetView {
 
 
         this.flightLink = HH.create("a");
-        SS.style(this.flightLink, { "textDecoration": "none", "color" : "blue"});
+        SS.style(this.flightLink, { "textDecoration": "none", "color" : "blue","fontSize": "26px" });
         this.stage.appendChild(this.flightLink);
 
 
