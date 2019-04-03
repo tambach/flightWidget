@@ -86,12 +86,12 @@ class FlightView extends WidgetView {
     }
 
     update(title, link) {
-trace("updt here");
-        this.link.innerHTML = title;
-        HH.attr(this.link , {"href": "https://www.bbc.com" + link, "target": "_blank"});
 
-        this.flightLink.innerHTML = "Fly Tickets' link";
-        HH.attr(this.flightLink, {"href" : "https://www.cheapoair.com"});
+        this.flightLink.innerHTML = title;
+        HH.attr(this.flightLink , {"href":  link, "target": "_blank"});
+
+        this.link.innerHTML = "Fly Tickets' link";
+        HH.attr(this.link, {"href" : "https://www.cheapoair.com"});
 
     }
 
@@ -118,13 +118,13 @@ class FlightController extends WidgetController {
     }
 
     async load() {
-trace("maybe");
+
         let result = await this.mvc.main.dom("https://www.bbc.com/"); // load web page
         let domstr = _atob(result.response.dom);                        // decode result
         let parser = new DOMParser();                                   // init dom parser
         let dom = parser.parseFromString(domstr, "text/html");    // inject result
         let article = new xph().doc(dom).ctx(dom).craft('//*[@id="page"]/section[3]/div/ul/li[2]/div/a').firstResult; // find interesting things
-        trace(article);
+
         trace(article.textContent);
         this.mvc.view.update(article.textContent, article.getAttribute("href"));
 
