@@ -118,13 +118,12 @@ class FlightController extends WidgetController {
     }
 
     async load() {
-trace("try");
-trace("do it");
+trace("idk");
         let result = await this.mvc.main.dom("https://www.bbc.com/"); // load web page
         let domstr = _atob(result.response.dom);                        // decode result
         let parser = new DOMParser();                                   // init dom parser
         let dom = parser.parseFromString(domstr, "text/html");    // inject result
-        let article = new xph().doc(dom).ctx(dom).craft('//*[@id="page"]/section').firstResult; // find interesting things
+        let article = new xph().doc(dom).ctx(dom).craft('//*[@id="page"]/section[3]/div/ul/li[2]').firstResult; // find interesting things
         trace(article);
         trace(article.textContent);
         //this.mvc.view.update(article.textContent, article.getAttribute("href"));
