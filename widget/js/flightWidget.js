@@ -61,11 +61,11 @@ class FlightView extends WidgetView {
 
 
         this.link = HH.create("a");
-        SS.style(this.link, {"fontSize": "18px", "textDecoration": "none", "color" : "green" });
+        SS.style(this.link, {"fontSize": "18px", "textDecoration": "none", "color" : "green" , "margin-bottom": "10px"});
         this.stage.appendChild(this.link);
 
         this.div1 = HH.create("div");
-        SS.style(this.div1, {"fontSize": "16px",  "color" : "green" });
+        SS.style(this.div1, {"fontSize": "16px",  "color" : "green" , "margin-top": "20px"});
         this.stage.appendChild(this.div1);
 
 
