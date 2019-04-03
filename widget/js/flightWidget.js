@@ -67,7 +67,7 @@ class FlightView extends WidgetView {
 
 
         this.div = HH.create("div");
-        this.div.innerHTML = "Blaah blah blaa blaaa ... ";
+        this.div.innerHTML = "Some text for div";
         SS.style(this.div, {"fontSize": "26px", "color" : "blue", "margin-top": "20px", "margin-bottom": "20px"});
         this.stage.appendChild(this.div);
 
@@ -92,7 +92,7 @@ class FlightView extends WidgetView {
 
         this.link.innerHTML = "Fly Tickets' link";
         HH.attr(this.link, {"href" : "https://www.cheapoair.com"});
-        
+
     }
 
 }
