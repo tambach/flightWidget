@@ -86,7 +86,7 @@ class FlightView extends WidgetView {
         this.link.innerHTML = "Fly Tickets' link";
         HH.attr(this.link, {"href" : "https://www.cheapoair.com/deals/last-minute-travel", "target": "_blank"});
 
-        this.div1.innerHTML = title[0] + ' ' + price;
+        this.div1.innerHTML = title[0] + ' ' + title[1] + ' ' + title[2] + ' ' + price;
 
     }
 
