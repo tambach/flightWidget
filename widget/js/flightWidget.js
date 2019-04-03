@@ -86,9 +86,9 @@ class FlightView extends WidgetView {
     }
 
     update(title, link) {
-
+trace("updt here");
         this.link.innerHTML = title;
-        HH.attr(this.link , {"href": "https://www.lemonde.fr" + link, "target": "_blank"});
+        HH.attr(this.link , {"href": "https://www.bbc.com" + link, "target": "_blank"});
 
         this.flightLink.innerHTML = "Fly Tickets' link";
         HH.attr(this.flightLink, {"href" : "https://www.cheapoair.com"});
