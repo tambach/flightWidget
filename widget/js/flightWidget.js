@@ -9,8 +9,8 @@ class FlightWidget extends Widget {
         super.setUp();
         this.header = true;
         this.footer = true;
-        this.sizeX = 6;
-        this.sizeY = 4;
+        this.sizeX = 8;
+        this.sizeY = 6;
         this.radius = 20;
 
         this.defaultSize = 100;
@@ -55,40 +55,49 @@ class FlightView extends WidgetView {
     draw() {
         super.draw();
 
-        this.try.header.innerHTML = "Cheapest flights in this week";
+        this.try.header.innerHTML = "Flights in this week ";
+        SS.style(this.try.header, {"fontSize": "20px"});
         this.try.stage.appendChild(this.try.header);
 
 
 
-
-        this.div1 = HH.create("div");
-        SS.style(this.div1, {"fontSize": "16px",  "color" : "green" , "margin-top": "20px"});
-        this.stage.appendChild(this.div1);
-
-
+        this.div = HH.create("div");
+        SS.style(this.div, {"margin-top": "20px", "margin-bottom": "25px"});
+        this.stage.appendChild(this.div);
 
         this.link = HH.create("a");
-        SS.style(this.link, {"fontSize": "18px", "textDecoration": "none", "color" : "green" , "margin-bottom": "10px"});
-        this.div1.appendChild(this.link);
+        SS.style(this.link, {"fontSize": "22px", "textDecoration": "none", "color" : "blue" });
+        this.div.appendChild(this.link);
 
 
-        this.try.footer.innerHTML = "footer example";
+        this.list = HH.create("ul");
+        this.stage.appendChild(this.list);
+
+
+        this.try.footer.innerHTML = "";
         SS.style(this.try.footer, {"userSelect": "none", "cursor": "pointer"});
         Events.on(this.try.footer, "click", event => this.mvc.controller.socketClick());
         this.try.stage.appendChild(this.try.footer);
 
     }
 
-    update(title, price ) {
+    update(title, item ) {
 
-       /* this.flightLink.innerHTML = title;
-        HH.attr(this.flightLink , {"href":  link, "target": "_blank"});
-        */
+        this.link.innerHTML = "Click here to see the site";
+        HH.attr(this.link , {"href":  "https://www.omio.com/flights/france#flightsfrom", "target": "_blank"});
 
-        this.link.innerHTML = "Fly Tickets' link";
-        HH.attr(this.link, {"href" : "https://www.cheapoair.com/deals/last-minute-travel", "target": "_blank"});
 
-        this.div1.innerHTML = title[0] + ' ' + title[1] + ' ' + title[2] + ' ' + price;
+        this.listItem = HH.create("li");
+        SS.style(this.listItem, {"fontSize": "18px", "margin": "18px" });
+        this.list.appendChild(this.listItem);
+
+        this.linkItem = HH.create("a");
+        SS.style(this.linkItem , {"fontSize": "18px", "textDecoration": "none", "color" : "blue","margin-top": "10px" });
+        this.listItem.appendChild(this.linkItem);
+
+        this.linkItem.innerHTML =  title ;
+        HH.attr(this.linkItem , {"href":  item, "target": "_blank"});
+
 
     }
 
@@ -116,23 +125,20 @@ class FlightController extends WidgetController {
 
     async load() {
 
-        let result = await this.mvc.main.dom("https://www.cheapoair.com/deals/last-minute-travel"); // load web page
+        let link = "https://www.omio.com/flights/france#flightsfrom";
+        let result = await this.mvc.main.dom(link);                     // load web page
         let domstr = _atob(result.response.dom);                        // decode result
         let parser = new DOMParser();                                   // init dom parser
         let dom = parser.parseFromString(domstr, "text/html");    // inject result
-        let article = [];
-         article[0] = new xph().doc(dom).ctx(dom).craft('//*[@id="dynDeals"]/div[1]/div[2]/span[1]/span[1]').firstResult; // find interesting things
-         article[1] = new xph().doc(dom).ctx(dom).craft('//*[@id="dynDeals"]/div[1]/div[2]/span[1]/span[2]').firstResult; // find interesting things
-         article[2] = new xph().doc(dom).ctx(dom).craft('//*[@id="dynDeals"]/div[1]/div[2]/span[1]/span[4]').firstResult; // find interesting things
+        let article = new xph().doc(dom).ctx(dom).craft('//*[@id="table1"]').allResults; // find interesting things
 
-        let price = new xph().doc(dom).ctx(dom).craft('//*[@id="dynDeals"]/div[1]/div[2]/span[2]').firstResult; // find interesting things
 
-        article[0] = article[0].textContent;
-        article[1] = article[1].textContent;
-        article[2] = article[2].textContent;
-
-        this.mvc.view.update(article, price.textContent);
-
+       for(let i = 0; i < article.length; i += 2)
+       {
+           let headTitle = article[i].textContent + "  "+ article[i+1].textContent;
+           let url = article[i+1].getAttribute("href");
+           this.mvc.view.update(headTitle, url );
+       }
 
     }
 

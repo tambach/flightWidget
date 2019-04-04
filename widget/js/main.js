@@ -6,7 +6,7 @@ window.addEventListener("load", event => {
 class Main {
 	
 	constructor() {
-		trace("load dash");
+
 		this._name = "dash";
 	}
 	
