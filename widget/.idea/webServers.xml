@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a2c98291-7a2d-4a63-ab88-f9fbab5f7623" name="bocal.cs.univ-paris8.fr" url="http://bocal.cs.univ-paris8.fr">
+        <fileTransfer host="bocal.cs.univ-paris8.fr" port="22" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

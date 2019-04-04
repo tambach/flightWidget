@@ -60,14 +60,16 @@ class FlightView extends WidgetView {
 
 
 
-        this.link = HH.create("a");
-        SS.style(this.link, {"fontSize": "18px", "textDecoration": "none", "color" : "green" , "margin-bottom": "10px"});
-        this.stage.appendChild(this.link);
 
         this.div1 = HH.create("div");
         SS.style(this.div1, {"fontSize": "16px",  "color" : "green" , "margin-top": "20px"});
         this.stage.appendChild(this.div1);
 
+
+
+        this.link = HH.create("a");
+        SS.style(this.link, {"fontSize": "18px", "textDecoration": "none", "color" : "green" , "margin-bottom": "10px"});
+        this.div1.appendChild(this.link);
 
 
         this.try.footer.innerHTML = "footer example";
@@ -113,7 +115,7 @@ class FlightController extends WidgetController {
     }
 
     async load() {
-trace("this is test");
+
         let result = await this.mvc.main.dom("https://www.cheapoair.com/deals/last-minute-travel"); // load web page
         let domstr = _atob(result.response.dom);                        // decode result
         let parser = new DOMParser();                                   // init dom parser
@@ -125,7 +127,6 @@ trace("this is test");
 
         let price = new xph().doc(dom).ctx(dom).craft('//*[@id="dynDeals"]/div[1]/div[2]/span[2]').firstResult; // find interesting things
 
-        trace(article);
         article[0] = article[0].textContent;
         article[1] = article[1].textContent;
         article[2] = article[2].textContent;
@@ -138,4 +139,3 @@ trace("this is test");
 
 
 }
-//  #page > section.module.module--promo > div > ul > li.media-list__item.media-list__item--1 > div > a
