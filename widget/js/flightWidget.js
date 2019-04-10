@@ -73,9 +73,7 @@ class FlightView extends WidgetView {
         this.list = HH.create("ul");
         this.stage.appendChild(this.list);
 
-        this.secondDiv = HH.create("div");
-        SS.style(this.secondDiv, {"margin-top": "20px", "margin-bottom": "25px"});
-        this.stage.appendChild(this.secondDiv);
+
 
 
 
@@ -154,6 +152,11 @@ class FlightController extends WidgetController {
         dom = parser.parseFromString(domstr, "text/html");
         article = new xph().doc(dom).ctx(dom).craft('//*[@id="LpsContent-SmartLinkboxeyJ0eXBlIjoiU21hcnRMaW5rYm94IiwiYmFzaWNDb250ZW50IjpmYWxzZSwicGFyYW1ldGVycyI6eyJtYXhOdW1iZXJPZkxpbmtzIjozMCwic21hcnRMaW5rYm94UHJvdmlkZXIiOiJtb2RlVG9Qb3NpdGlvblBhZ2VWZXJ0aWNhbFNtYXJ0TGlua2JveFByb3ZpZGVyIn19"]/div/div/div/div/div[1]/div/h3').allResults;
 
+
+        this.secondDiv = HH.create("div");
+        SS.style(this.secondDiv, {"margin-top": "20px", "margin-bottom": "25px"});
+        this.stage.appendChild(this.secondDiv);
+        trace(article);
         this.secondDiv.innerHTML = article;
     }
 
