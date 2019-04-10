@@ -154,11 +154,7 @@ class FlightController extends WidgetController {
 
         trace(article);
 
-        this.secondDiv = HH.create("div");
-        SS.style(this.secondDiv, {"margin-top": "20px", "margin-bottom": "25px"});
-        this.stage.appendChild(this.secondDiv);
-        trace(article);
-        this.secondDiv.innerHTML = article;
+        
     }
 
 
