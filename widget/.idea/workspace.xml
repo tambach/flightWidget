@@ -12,20 +12,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/flightWidget.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="501">
-              <caret line="156" column="8" selection-start-line="156" selection-start-column="8" selection-end-line="156" selection-end-column="8" />
+              <caret line="156" selection-start-line="156" selection-end-line="156" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="true" current-in-tab="false">
+      <file pinned="true" current-in-tab="true">
         <entry file="remoteDeploymentFS://&lt;a2c98291-7a2d-4a63-ab88-f9fbab5f7623&gt;/var/public_html/tbachaliashvili/public_html/flightWidget/widget/js/flightWidget.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="162" lean-forward="true" selection-start-line="162" selection-end-line="162" />
+            <state relative-caret-position="327">
+              <caret line="147" column="29" selection-start-line="147" selection-start-column="29" selection-end-line="147" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -71,8 +71,8 @@
         <option value="&lt;a2c98291-7a2d-4a63-ab88-f9fbab5f7623&gt;/var/public_html/tbachaliashvili/public_html/flightWidget/widget/js/widget.js" />
         <option value="&lt;a2c98291-7a2d-4a63-ab88-f9fbab5f7623&gt;/var/public_html/tbachaliashvili/public_html/flightWidget/widget/index.html" />
         <option value="&lt;a2c98291-7a2d-4a63-ab88-f9fbab5f7623&gt;/var/public_html/tbachaliashvili/public_html/flightWidget/widget/js/main.js" />
-        <option value="&lt;a2c98291-7a2d-4a63-ab88-f9fbab5f7623&gt;/var/public_html/tbachaliashvili/public_html/flightWidget/widget/js/flightWidget.js" />
         <option value="$PROJECT_DIR$/js/flightWidget.js" />
+        <option value="&lt;a2c98291-7a2d-4a63-ab88-f9fbab5f7623&gt;/var/public_html/tbachaliashvili/public_html/flightWidget/widget/js/flightWidget.js" />
       </list>
     </option>
   </component>
@@ -139,12 +139,12 @@
       <option name="presentableId" value="Default" />
       <updated>1554150662538</updated>
       <workItem from="1554150665117" duration="3654000" />
-      <workItem from="1554154843909" duration="44114000" />
+      <workItem from="1554154843909" duration="44350000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47768000" />
+    <option name="totallyTimeSpent" value="48004000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="820" extended-state="0" />
@@ -263,7 +263,7 @@
     <entry file="file://$PROJECT_DIR$/js/flightWidget.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="501">
-          <caret line="156" column="8" selection-start-line="156" selection-start-column="8" selection-end-line="156" selection-end-column="8" />
+          <caret line="156" selection-start-line="156" selection-end-line="156" />
         </state>
       </provider>
     </entry>

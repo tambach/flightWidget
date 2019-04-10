@@ -154,7 +154,7 @@ class FlightController extends WidgetController {
 
         trace(article);
 
-        
+
     }
 
 
