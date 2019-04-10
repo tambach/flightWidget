@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dda6ed72-263f-4d1d-b7b9-babe89adcfc2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/js/flightWidget.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/flightWidget.js" afterDir="false" />
-    </list>
+    <list default="true" id="dda6ed72-263f-4d1d-b7b9-babe89adcfc2" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +22,8 @@
       <file pinned="true" current-in-tab="true">
         <entry file="remoteDeploymentFS://&lt;a2c98291-7a2d-4a63-ab88-f9fbab5f7623&gt;/var/public_html/tbachaliashvili/public_html/flightWidget/widget/js/flightWidget.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="147" column="29" selection-start-line="147" selection-start-column="29" selection-end-line="147" selection-end-column="29" />
+            <state relative-caret-position="-509">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
@@ -69,9 +67,10 @@
         <option value="$PROJECT_DIR$/js/widgets/widget.js" />
         <option value="$PROJECT_DIR$/js/xpathhelper.min.js" />
         <option value="&lt;a2c98291-7a2d-4a63-ab88-f9fbab5f7623&gt;/var/public_html/tbachaliashvili/public_html/flightWidget/widget/js/widget.js" />
-        <option value="&lt;a2c98291-7a2d-4a63-ab88-f9fbab5f7623&gt;/var/public_html/tbachaliashvili/public_html/flightWidget/widget/index.html" />
         <option value="&lt;a2c98291-7a2d-4a63-ab88-f9fbab5f7623&gt;/var/public_html/tbachaliashvili/public_html/flightWidget/widget/js/main.js" />
         <option value="$PROJECT_DIR$/js/flightWidget.js" />
+        <option value="&lt;a2c98291-7a2d-4a63-ab88-f9fbab5f7623&gt;/var/public_html/tbachaliashvili/public_html/flightWidget/widget/index.html" />
+        <option value="&lt;a2c98291-7a2d-4a63-ab88-f9fbab5f7623&gt;/var/public_html/tbachaliashvili/public_html/flightWidget/widget/js/comm.js" />
         <option value="&lt;a2c98291-7a2d-4a63-ab88-f9fbab5f7623&gt;/var/public_html/tbachaliashvili/public_html/flightWidget/widget/js/flightWidget.js" />
       </list>
     </option>
@@ -139,16 +138,15 @@
       <option name="presentableId" value="Default" />
       <updated>1554150662538</updated>
       <workItem from="1554150665117" duration="3654000" />
-      <workItem from="1554154843909" duration="44350000" />
+      <workItem from="1554154843909" duration="45360000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48004000" />
+    <option name="totallyTimeSpent" value="49014000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="820" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13018598" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
