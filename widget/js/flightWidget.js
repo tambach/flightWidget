@@ -150,9 +150,10 @@ class FlightController extends WidgetController {
         domstr = _atob(result.response.dom);
         parser = new DOMParser();
         dom = parser.parseFromString(domstr, "text/html");
-        article = new xph().doc(dom).ctx(dom).craft('//*[@id="LpsContent-SmartLinkboxeyJ0eXBlIjoiU21hcnRMaW5rYm94IiwiYmFzaWNDb250ZW50IjpmYWxzZSwicGFyYW1ldGVycyI6eyJtYXhOdW1iZXJPZkxpbmtzIjozMCwic21hcnRMaW5rYm94UHJvdmlkZXIiOiJtb2RlVG9Qb3NpdGlvblBhZ2VWZXJ0aWNhbFNtYXJ0TGlua2JveFByb3ZpZGVyIn19"]/div/div/div/div/div[1]/div/h3').allResults;
+        article = new xph().doc(dom).ctx(dom).craft('//*[@id="LpsContent-SmartLinkboxeyJ0eXBlIjoiU21hcnRMaW5rYm94IiwiYmFzaWNDb250ZW50IjpmYWxzZSwicGFyYW1ldGVycyI6eyJtYXhOdW1iZXJPZkxpbmtzIjozMCwic21hcnRMaW5rYm94UHJvdmlkZXIiOiJtb2RlVG9Qb3NpdGlvblBhZ2VWZXJ0aWNhbFNtYXJ0TGlua2JveFByb3ZpZGVyIn19"]/div/div/div/div/div[1]/div').firstResult;
 
         trace(article);
+        trace(article.article.textContent);
 
 
     }
