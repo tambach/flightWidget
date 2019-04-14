@@ -144,7 +144,7 @@ class FlightController extends WidgetController {
            let url = article[i+1].getAttribute("href");
            this.mvc.view.update(headTitle, url );
        }
-
+/*
        let secondLink = "https://www.omio.com/flights/paris";
         result = await this.mvc.main.dom(secondLink);
         domstr = _atob(result.response.dom);
@@ -155,7 +155,7 @@ class FlightController extends WidgetController {
         trace("new");
         trace(article);
         trace(article.article.textContent);
-
+*/
 
     }
 
