@@ -129,7 +129,7 @@ class FlightController extends WidgetController {
     }
 
     async load() {
-
+trace("try");
         let link = "https://www.omio.com/flights/france#flightsfrom";
         let result = await this.mvc.main.dom(link);                     // load web page
         let domstr = _atob(result.response.dom);                        // decode result

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dda6ed72-263f-4d1d-b7b9-babe89adcfc2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/flightWidget.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/flightWidget.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/flightWidget.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="157" column="2" selection-start-line="157" selection-start-column="2" selection-end-line="157" selection-end-column="2" />
+            <state relative-caret-position="96">
+              <caret line="131" column="13" selection-start-line="131" selection-start-column="13" selection-end-line="131" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -152,12 +151,12 @@
       <workItem from="1554150665117" duration="3654000" />
       <workItem from="1554154843909" duration="50820000" />
       <workItem from="1554912598646" duration="139000" />
-      <workItem from="1555243152672" duration="750000" />
+      <workItem from="1555243152672" duration="814000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55363000" />
+    <option name="totallyTimeSpent" value="55427000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="820" extended-state="0" />
@@ -270,8 +269,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/flightWidget.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="157" column="2" selection-start-line="157" selection-start-column="2" selection-end-line="157" selection-end-column="2" />
+        <state relative-caret-position="96">
+          <caret line="131" column="13" selection-start-line="131" selection-start-column="13" selection-end-line="131" selection-end-column="13" />
         </state>
       </provider>
     </entry>
