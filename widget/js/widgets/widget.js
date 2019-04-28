@@ -189,7 +189,7 @@ class WidgetView extends Try {
 		
 		if(this.try.mvc.main.header) {
 			this.try.header = HH.create("div");
-			SS.style(this.try.header, {"z-index": 100, "userSelect": "none", "width": "100%", "height": "25px", "align-left": "50px", "lineHeight": "25px", "textAlign": "center", "border-top-left-radius": this.try.mvc.main.radius + "px", "border-top-right-radius": this.try.mvc.main.radius + "px","backgroundColor": "#0072ff"});
+			SS.style(this.try.header, {"z-index": 100, "userSelect": "none", "width": "100%", "height": "35px", "align-left": "50px", "lineHeight": "25px", "textAlign": "center", "border-top-left-radius": this.try.mvc.main.radius + "px", "border-top-right-radius": this.try.mvc.main.radius + "px","backgroundColor": "#0072ff"});
 			this.try.header.innerHTML = this.try.mvc.main.name;
 			this.try.stage.appendChild(this.try.header);
 		}
