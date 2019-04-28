@@ -59,6 +59,7 @@ class FlightView extends WidgetView {
     constructor() {
 
         super();
+        trace("Did you awake ?");
     }
 
     setUp() {
@@ -72,7 +73,7 @@ class FlightView extends WidgetView {
 
         // header
         this.try.header.innerHTML = "";
-        SS.style(this.try.header, {"height": "40px"});
+        SS.style(this.try.header, {"height": "32px"});
         this.try.stage.appendChild(this.try.header);
         this.headerLink = HH.create("a");
         this.headerLink.innerHTML = "Click here to see the full site";

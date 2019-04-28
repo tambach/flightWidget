@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dda6ed72-263f-4d1d-b7b9-babe89adcfc2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/js/ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/flightWidget.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/flightWidget.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,20 +12,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/flightWidget.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="235" column="14" selection-start-line="235" selection-start-column="10" selection-end-line="235" selection-end-column="14" />
+            <state relative-caret-position="623">
+              <caret line="244" lean-forward="true" selection-start-line="244" selection-end-line="244" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/ui.js">
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;a2c98291-7a2d-4a63-ab88-f9fbab5f7623&gt;/var/public_html/tbachaliashvili/public_html/flightWidget/widget/js/flightWidget.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="591">
-              <caret line="315" column="19" selection-start-line="315" selection-start-column="19" selection-end-line="315" selection-end-column="19" />
+            <state>
+              <caret selection-end-line="244" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;a2c98291-7a2d-4a63-ab88-f9fbab5f7623&gt;/var/public_html/tbachaliashvili/public_html/flightWidget/widget/js/widgets/widget.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="191" column="106" selection-start-line="191" selection-start-column="106" selection-end-line="191" selection-end-column="106" />
             </state>
           </provider>
         </entry>
@@ -84,11 +93,11 @@
         <option value="&lt;a2c98291-7a2d-4a63-ab88-f9fbab5f7623&gt;/var/public_html/tbachaliashvili/public_html/flightWidget/widget/js/ui.js" />
         <option value="$PROJECT_DIR$/js/widgets/widget.js" />
         <option value="&lt;a2c98291-7a2d-4a63-ab88-f9fbab5f7623&gt;/var/public_html/tbachaliashvili/public_html/flightWidget/widget/js/widget.js" />
-        <option value="&lt;a2c98291-7a2d-4a63-ab88-f9fbab5f7623&gt;/var/public_html/tbachaliashvili/public_html/flightWidget/widget/js/widgets/widget.js" />
         <option value="$PROJECT_DIR$/js/xpathhelper.min.js" />
+        <option value="$PROJECT_DIR$/js/ui.js" />
+        <option value="&lt;a2c98291-7a2d-4a63-ab88-f9fbab5f7623&gt;/var/public_html/tbachaliashvili/public_html/flightWidget/widget/js/widgets/widget.js" />
         <option value="&lt;a2c98291-7a2d-4a63-ab88-f9fbab5f7623&gt;/var/public_html/tbachaliashvili/public_html/flightWidget/widget/js/flightWidget.js" />
         <option value="$PROJECT_DIR$/js/flightWidget.js" />
-        <option value="$PROJECT_DIR$/js/ui.js" />
       </list>
     </option>
   </component>
@@ -164,18 +173,18 @@
       <workItem from="1554154843909" duration="50820000" />
       <workItem from="1554912598646" duration="139000" />
       <workItem from="1555243152672" duration="32078000" />
-      <workItem from="1556199474499" duration="992000" />
+      <workItem from="1556199474499" duration="1479000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87683000" />
+    <option name="totallyTimeSpent" value="88170000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="820" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2160229" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16666667" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -195,7 +204,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="Remote Host" order="4" visible="true" weight="0.22174536" />
+      <window_info active="true" anchor="right" id="Remote Host" order="4" visible="true" weight="0.15307583" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,17 +282,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/flightWidget.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="235" column="14" selection-start-line="235" selection-start-column="10" selection-end-line="235" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/ui.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="591">
           <caret line="315" column="19" selection-start-line="315" selection-start-column="19" selection-end-line="315" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/flightWidget.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="244" lean-forward="true" selection-start-line="244" selection-end-line="244" />
         </state>
       </provider>
     </entry>
