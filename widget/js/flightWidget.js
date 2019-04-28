@@ -117,7 +117,13 @@ class FlightView extends WidgetView {
 
     }
 
-
+    /**
+     * puts content for main page
+     * images, text and links
+     * @param href
+     * @param alt
+     * @param src
+     */
     update(href, alt, src ) {
 
         this.listItem = HH.create("li");
@@ -137,6 +143,9 @@ class FlightView extends WidgetView {
         HH.attr(this.linkItem , {"href":  href, "target": "_blank"});
     }
 
+    /**
+     * adds options into select item
+     */
     addOptions()
     {
         for( let i=0; i < CITIES.length; i++)
@@ -148,11 +157,21 @@ class FlightView extends WidgetView {
         }
     }
 
+    /**
+     * changes title after request
+     * @param city
+     */
     updateTitle (city)
     {
         this.div.innerHTML = "Results for city " + city;
     }
 
+    /**
+     * puts contect for result
+     * text and links
+     * @param title
+     * @param href
+     */
     updateContent( title, href)
     {
         this.linkDiv = HH.create("div");
@@ -187,6 +206,10 @@ class FlightController extends WidgetController {
         SocketIO.send("msg", {test: "message"});
     }
 
+    /**
+     * event on mouse click
+     * @param event
+     */
     myClick(event)
     {
         let id = event.value;
