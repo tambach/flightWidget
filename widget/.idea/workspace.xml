@@ -15,8 +15,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/flightWidget.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="209" column="27" selection-start-line="209" selection-start-column="27" selection-end-line="209" selection-end-column="27" />
+            <state relative-caret-position="96">
+              <caret line="235" column="35" lean-forward="true" selection-start-line="235" selection-start-column="35" selection-end-line="235" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -34,7 +34,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>msg</find>
       <find>tostring</find>
       <find>name</find>
       <find>lemondewi</find>
@@ -64,6 +63,7 @@
       <find>xph</find>
       <find>load</find>
       <find>trace</find>
+      <find>contentArray</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -164,12 +164,12 @@
       <workItem from="1554154843909" duration="50820000" />
       <workItem from="1554912598646" duration="139000" />
       <workItem from="1555243152672" duration="32078000" />
-      <workItem from="1556199474499" duration="1827000" />
+      <workItem from="1556199474499" duration="2067000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88518000" />
+    <option name="totallyTimeSpent" value="88758000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="820" extended-state="0" />
@@ -282,8 +282,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/flightWidget.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="209" column="27" selection-start-line="209" selection-start-column="27" selection-end-line="209" selection-end-column="27" />
+        <state relative-caret-position="96">
+          <caret line="235" column="35" lean-forward="true" selection-start-line="235" selection-start-column="35" selection-end-line="235" selection-end-column="35" />
         </state>
       </provider>
     </entry>

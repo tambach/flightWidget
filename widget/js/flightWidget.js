@@ -208,6 +208,7 @@ class FlightController extends WidgetController {
 
     /**
      * event on mouse click
+     * update title and content
      * @param event
      */
     myClick(event)
@@ -230,16 +231,17 @@ class FlightController extends WidgetController {
 
     }
 
+    /**
+     * get data from web page
+     * render them on the mane page
+     * @returns {Promise<void>}
+     */
     async getDataFromSkiplagged(){
         let link = "https://skiplagged.com/";
         let result = await this.mvc.main.dom(link);
         let domstr = _atob(result.response.dom);
         let parser = new DOMParser();
         let dom = parser.parseFromString(domstr, "text/html");
-
-        let contentArray = [
-            {href: "", text: "", src: ""}
-        ];
 
         for(let i = 1; i <= 7; i++)
         {
