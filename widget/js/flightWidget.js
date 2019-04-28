@@ -59,7 +59,6 @@ class FlightView extends WidgetView {
     constructor() {
 
         super();
-        trace("Did you awake ?");
     }
 
     setUp() {
